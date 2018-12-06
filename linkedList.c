@@ -8,4 +8,4 @@ typedef struct linknd{
 
 
 
-// struct linknd nd; = linknd_t nd;
+static linknd_t *list; //linked list ½ÇÃ¼   
