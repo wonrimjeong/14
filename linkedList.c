@@ -66,6 +66,7 @@ void print_list(int n){
 		if(i ==n)
 		{
 			printf("%i-th value : %i\n", i, ndPtr->data);
+			break;
 		}
 		
 		
