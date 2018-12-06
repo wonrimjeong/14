@@ -56,12 +56,19 @@ void genList(void){
 	return;
 }
 
-void print_list(void){
-	linknd_t *ndPtr;
+void print_list(int n){
+	linknd_t *ndPtr = list;
+	int i=0;
 	
 	ndPtr = list->next;
 	while(ndPtr != NULL){  
-		printf("%i\n", ndPtr->data);
+		i++;
+		if(i ==n)
+		{
+			printf("%i-th value : %i\n", i, ndPtr->data);
+		}
+		
+		
 		ndPtr = ndPtr->next;
 	}
 }
